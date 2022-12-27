@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="/landing page/logo.jpg" alt="">
+
+        </div>
+        <nav>
+            <div class="links" id="links">
+                <i class="bi bi-x-lg" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li>ANA SAYFA</li>
+                    <li>HAKKIMIZDA</li>
+                    <li>İLETİŞİM</li>
+                </ul>
+            </div>
+            <i class="bi bi-list" onclick="showMenu()"></i>
+        </nav>
+        
+
+    </header>
+    <div class="maincontainer">
+        <div class="leftside">
+            <h2>Whatsapp Bilgi</h2>
+            <p>Hesabınıza bir cihaz bağlamanızın hemen ardından, telefonunuz en son mesaj geçmişinizin bir kopyasını
+                yeni bağladığınız cihaza uçtan uca şifrelenmiş şekilde gönderir. Mesaj geçmişi, yeni bağladığınız
+                cihazda yerel olarak saklanır. Sohbetlerinizdeki mesajların sayısına bağlı olarak, mesaj geçmişinizin
+                bağlı cihazlarınızda görünmesi birkaç dakika sürebilir.</p>
+            <a href="#" class="primarybutton">Uygulamaya Git</a>
+
+        </div>
+        <div class="rightside">
+            <img class="rightimg" src="/landing page/picture.png" alt="">
+        </div>
+    </div>
+    <script>
+        var links = document.getElementById('links')
+
+        function showMenu() {
+            links.style.right = "0"
+        }
+
+        function hideMenu() {
+            links.style.right ="-200px"
+        }
+    </script>
+
+
+</body>
+
+</html>
